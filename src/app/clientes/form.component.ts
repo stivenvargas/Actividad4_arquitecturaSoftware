@@ -48,7 +48,7 @@ export class FormComponent implements OnInit {
       .subscribe(
         json => {
           this.router.navigate(['/clientes']);
-          swal('Cliente Actualizado', `${json.mensaje}: ${json.cliente.nombre}`, 'success');
+          swal('Cliente Actualizado con exito', `${json.mensaje}: ${json.cliente.nombre}`, 'success');
         },
         err => {
           this.errores = err.error.errors as string[];
