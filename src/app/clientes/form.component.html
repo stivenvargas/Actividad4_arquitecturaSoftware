@@ -63,7 +63,7 @@
             <div class="form-group row">
                 <div class="col-sm-6">
                     <button class="btn btn-primary" role="button" (click)='create()' *ngIf="!cliente.id else elseBlock" [disabled]="!clienteForm.form.valid">Crear</button>
-
+                    <button style="margin-left: 10px; height: 38px;" class="btn btn-danger btn-sm" role="button">Cancelar</button>
                     <ng-template #elseBlock>
                         <button class="btn btn-primary" role="button" (click)='update()' [disabled]="!clienteForm.form.valid">Editar</button>
                     </ng-template>
